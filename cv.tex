@@ -99,19 +99,11 @@
 
 
 % job listing environments
-\newenvironment{jobshort}[2]
+\newenvironment{joblong}[3]
     {
+    \noindent\textbf{\large #1}\\ % Larger font for the company name
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
-    }
-    {
-    }
-
-\newenvironment{joblong}[2]
-    {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \textit{#2} & &  {\textcolor{gray}{#3}} \\[3.75pt] % Italic font for the position
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
@@ -120,8 +112,6 @@
     \end{itemize}
     \end{minipage}    
     }
-
-
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -142,11 +132,11 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Diego Cerda} \\[7.5pt]
-\href{https://github.com/dcerdac}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/diegocerdac}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{mailto:dcerdac@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Diego Cerda, M.Sc.} \\[7.5pt]
+\href{https://github.com/dcerdac}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{https://linkedin.com/in/diegocerdac}{\raisebox{-0.05\height}\faLinkedin\ diegocerdac} \ $|$ \ 
+\href{mailto:dcerdac@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ dcerdac@gmail.com} \ $|$ \ 
+\href{tel:+523311141974}{\raisebox{-0.05\height}\faMobile \ (+52) 331.114.1974} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,62 +145,85 @@
 
 %Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+Seasoned Senior Data Scientist with over 6 years of experience in the energy sector. I specialize in driving innovation and developing advanced analytical tools for solar, battery storage, geothermal, wind, and oil & gas industries. Proficient in machine learning for regression, clustering, classification, and forecasting. Highly skilled in data analytics, SQL, and Python.
 
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+% Example usage
+\begin{joblong}{NarrativeWave Inc.}{Senior Data Science Manager}{2022 - 2024}
+    \item Streamlined onboarding by architecting data pipelines and automating ETL processes, reducing time-to-value to 60 days. Led cross-functional teams as Product Owner, managing development and delivery of innovative products to meet business objectives and user needs.
+    \item Engaged in executive-level discussions and demos, directly contributing to over \$300,000 USD in closed deals; spearheaded new use-case development, ensuring the renewal and expansion of more than 8 key accounts.
 \end{joblong}
-  
-%Projects
-\section{Projects}
+\\
+\begin{joblong}{}{Lead Data Scientist}{2020 - 2022}
+    \item Integrated LLMs with Canary and Cygnet SCADA systems to extract insights from historical operator notes in WellView software. Fine-tuned BERT model for job cost prediction, enabling proactive budget management and cost deviation prevention.
+    \item Developed predictive models for energy generation, enabling advanced forecasting, power curve analysis, and proactive identification of equipment wear and long-term operational challenges, ensuring optimal O\&M responsiveness. 
+    \item Developed ESG dashboards for Vaalco Energy, automating data ingestion, implementing validations, and streamlining SharePoint sharing to enhance accuracy and efficiency in ESG reporting workflows.
+\end{joblong}
+\\
+\begin{joblong}{}{Data Scientist / Machine Learning Engineer}{2018 - 2020}
+    \item \textbf{Advanced Energy Analytics:} Deployed analytics for 15+ GW across diverse energy applications, including RWE-Innogy's offshore wind turbines. Implemented predictive maintenance for Enel, Longroad, RWE, and Novatus using anomaly detection methods (Isolation Forest, PCA) to optimize operations.
+    \item \textbf{Predictive Solutions:} Implemented predictive analytics and anomaly detection for energy giants including ExxonMobil, Shell, and Enel Solar, leveraging advanced techniques (neural networks, LSTM, pattern recognition) to optimize operations and enhance equipment health.
+    \item \textbf{KPI Development \& Visualization:} Designed and implemented IEC-compliant dashboards tracking critical solar performance metrics including performance ratio, soiling, degradation, DC health, tracker alignment, and expected power. Created visualizations such as waterfall losses, heatmaps, and power curves. Calculated power loss due to underperformance and downtime allocation, integrating PVLib and PVSyst data for comprehensive analysis and optimization insights.
+\end{joblong}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+\begin{joblong}{Tafer Hotels \&  Resorts }{Data Analyst}{2017 - 2018}
+    \item Developed a forecasting model for hotel demand using mixed-integer linear programming and an additive time series method (capturing yearly, weekly, and daily seasonality), integrating data from multiple sources, leading to increased occupancy rates and optimized revenue streams.
+    \item Collaborated closely with sales and marketing teams, employing the model's constraints and outputs to determine competitive pricing and innovative marketing strategies, aligning with demand forecasts and market dynamics.
+\end{joblong}
 
+\begin{joblong}{Hewlett Packard Enterprise}{Systems and Solutions Architect}{2014 - 2017}
+    \item Developed a cross-platform support application for SAS, Qlikview, and Informatica, significantly enhancing incident response times. Led the adoption of Agile methodologies, ensuring consistent delivery of business value through efficient, iterative sprints.
+\end{joblong}
+    
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+    2016 - 2017 & M.Sc. in Advanced Computer Science at \textbf{University of Sheffield} \hfill \\
+    & \begin{itemize}[nosep, leftmargin=*]
+        Dissertation: Developed and compared machine learning models, including SVM, Decision Tree, Multilayer Perceptron, Regression, Logistic Regression, and Mixed Gaussian Model, for predicting energy efficiency in buildings; leveraged advanced statistical techniques for performance analysis. \href{https://github.com/dcerdac/DissertationCode}{Code Example}
+    \end{itemize} \\
+    2009 - 2014 & B.Sc. in Electronics Engineering at \textbf{Instituto Tecnologico y de Estudios Superiores de Monterrey} \hfill \\ 
+    \end{tabularx}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+& \normalsize{Spanish (Native), English (Fluent)}\\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+%	CERTIFICATION
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\section{Certifications}
 
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+& \normalsize{\href{https://github.com/dcerdac/MachineLearningProjects/blob/master/010102001521809623012377209.pdf}{HCIA-AI} - Huawei Certified ICT Associate, Shenzhen, China (2024)}\\
+\end{tabularx}
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
+    Machine Learning & \normalsize{Scikit-learn, TensorFlow, Keras, PyTorch, BERT, Transformers, Prophet, Catboost, LightGBM, XGboost}\\
+    Data Analysis & \normalsize{NumPy, SciPy, Pandas, Jupyter Notebook, Statsmodels}\\
+    Data Visualization & \normalsize{Matplotlib, Seaborn, Plotly, }\\
+    Natural Language Processing (NLP) & \normalsize{NLTK, Gensim, TfidfVectorizer, Word2Vec}\\
+    Explainable AI & \normalsize{SHAP, Lime}\\
+    Cloud Computing & \normalsize{EC2, S3, Lambda, RDS, CloudFormation, IAM, EKS, Route53, AWS-CLI, VPC, SageMaker}\\
+    DevOps & \normalsize{Docker, K8s, Circle CI/CD}\\
+    Programming Languages & \normalsize{Python, Java, Matlab, C, Unix, Shell-Bash Scripting}\\
+    Web Development & \normalsize{Javascript, HTML, PHP, Node.js, Flask, Django, Celery}\\
+    Databases & \normalsize{SQL, NoSQL, Postgres}\\
+    APIs & \normalsize{REST API, SCADA Systems}\\
+    Development Tools & \normalsize{Eclipse, Jira, Confluence, GitHub}\\
+    \end{tabularx}
 
 \vfill
-\center{\footnotesize Last updated: \today}
 
 \end{document}
