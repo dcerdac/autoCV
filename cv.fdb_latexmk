@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber cv"] 1720732229.00496 "cv.bcf" "cv.bbl" "cv" 1721241653.6122 0
+["biber cv"] 1720732229.00496 "cv.bcf" "cv.bbl" "cv" 1721667375.36378 0
   "citations.bib" 1719964746.50672 692 04b83486a89adf29397c0110baf8cc43 ""
-  "cv.bcf" 1721241653.46065 107314 3fa5a52b889556d0fd56daa4529178fb "pdflatex"
+  "cv.bcf" 1721667375.18822 107314 3fa5a52b889556d0fd56daa4529178fb "pdflatex"
   (generated)
   "cv.bbl"
   "cv.blg"
   (rewritten before read)
-["pdflatex"] 1721241652.29228 "/Users/home/GitRepos/autoCV/cv.tex" "cv.pdf" "cv" 1721241653.61252 2
-  "/Users/home/GitRepos/autoCV/cv.tex" 1721241650.41213 12397 f91e427a1b5b2d296b0d137a160282f1 ""
+["pdflatex"] 1721667373.80304 "/Users/home/GitRepos/autoCV/cv.tex" "cv.pdf" "cv" 1721667375.36423 2
+  "/Users/home/GitRepos/autoCV/cv.tex" 1721667371.81344 12699 4476732b926490190403736e9cda3b24 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -120,10 +120,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1720730401.92386 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1720730124 8221421 a6cb607d30b00f7440e1029cc433eaf7 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "cv.aux" 1721241653.45885 910 8318b9127ab5fd29637427d1d674b445 "pdflatex"
+  "cv.aux" 1721667375.18635 910 8318b9127ab5fd29637427d1d674b445 "pdflatex"
   "cv.bbl" 1720732250.78224 4234 947c6a2a547db70fefb21f3e32105416 "biber cv"
-  "cv.out" 1721241653.4596 561 b6224d23edb45373ac509a1acff462d1 "pdflatex"
-  "cv.tex" 1721241650.41213 12397 f91e427a1b5b2d296b0d137a160282f1 ""
+  "cv.out" 1721667375.18713 561 b6224d23edb45373ac509a1acff462d1 "pdflatex"
+  "cv.tex" 1721667371.81344 12699 4476732b926490190403736e9cda3b24 ""
   (generated)
   "cv.aux"
   "cv.bcf"
