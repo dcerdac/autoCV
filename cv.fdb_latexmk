@@ -1,14 +1,13 @@
 # Fdb version 4
-["biber cv"] 1720732229.00496 "cv.bcf" "cv.bbl" "cv" 1721667375.36378 0
+["biber cv"] 1720732229.00496 "cv.bcf" "cv.bbl" "cv" 1725302438.79774 0
   "citations.bib" 1719964746.50672 692 04b83486a89adf29397c0110baf8cc43 ""
-  "cv.bcf" 1721667375.18822 107314 3fa5a52b889556d0fd56daa4529178fb "pdflatex"
+  "cv.bcf" 1725302438.63661 107314 3fa5a52b889556d0fd56daa4529178fb "pdflatex"
   (generated)
   "cv.bbl"
   "cv.blg"
   (rewritten before read)
-["pdflatex"] 1721667373.80304 "/Users/home/GitRepos/autoCV/cv.tex" "cv.pdf" "cv" 1721667375.36423 2
-  "/Users/home/GitRepos/autoCV/cv.tex" 1721667371.81344 12699 4476732b926490190403736e9cda3b24 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
+["pdflatex"] 1725302437.36111 "/Users/home/GitRepos/autoCV/cv.tex" "cv.pdf" "cv" 1725302438.79809 2
+  "/Users/home/GitRepos/autoCV/cv.tex" 1725302435.32005 12778 f89be3c7a8ec78763735d128693255cf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -36,7 +35,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb" 1651520503 204258 177851ae99767090543ae24e73c92f2f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb" 1651520503 295323 d099723373a00cc17d5ae0c9738bb5b3 ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -120,10 +118,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1720730401.92386 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1720730124 8221421 a6cb607d30b00f7440e1029cc433eaf7 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "cv.aux" 1721667375.18635 910 8318b9127ab5fd29637427d1d674b445 "pdflatex"
+  "cv.aux" 1725302438.63289 922 6d6fd56ebfa0bf637ff320992ef77cee "pdflatex"
   "cv.bbl" 1720732250.78224 4234 947c6a2a547db70fefb21f3e32105416 "biber cv"
-  "cv.out" 1721667375.18713 561 b6224d23edb45373ac509a1acff462d1 "pdflatex"
-  "cv.tex" 1721667371.81344 12699 4476732b926490190403736e9cda3b24 ""
+  "cv.out" 1725302438.63433 625 369c651b91af71ed5d66f97e856ca6a2 "pdflatex"
+  "cv.tex" 1725302435.32005 12778 f89be3c7a8ec78763735d128693255cf ""
   (generated)
   "cv.aux"
   "cv.bcf"
