@@ -1,0 +1,239 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{joblong}[3]
+    {
+    \noindent\textbf{\large #1}\\ % Larger font for the company name
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textit{#2} & &  {\textcolor{gray}{#3}} \\[3.75pt] % Italic font for the position
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Diego Cerda, M.Sc.} \\[7.5pt]
+\href{https://github.com/dcerdac}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{https://linkedin.com/in/diegocerdac}{\raisebox{-0.05\height}\faLinkedin\ diegocerdac} \ $|$ \ 
+\href{mailto:dcerdac@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ dcerdac@gmail.com} \ $|$ \ 
+\href{tel:+13462325758}{\raisebox{-0.05\height}\faMobile \ +1 (346) 232 5758} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+Senior Energy Analyst with over 7 years of experience in the energy sector. I specialize in driving innovation and developing advanced analytical tools for solar, battery storage, geothermal, wind, and oil \& gas industries. Proficient in machine learning for regression, clustering, classification, and forecasting. Highly skilled in data analytics, SQL, and Python.
+
+%Experience
+\section{Work Experience}
+
+								
+
+% Example usage
+\begin{joblong}{Globant S.A. }{Senior Data Scientist}{2024 - present}
+    \item Built a computer vision-based monitoring system with automated DRM sampling for NBC Universal, improving detection of video and audio issues.    .
+    \item Developed scalable REST APIs and microservices using Docker and Kubernetes for efficient deployment of monitoring environments.    .
+\end{joblong}
+
+\begin{joblong}{NarrativeWave Inc.}{Senior Data Science Manager}{2022 - 2024}
+    \item Streamlined onboarding by architecting data pipelines and automating ETL processes, reducing time-to-value to 60 days. Led cross-functional teams as Product Owner, managing development and delivery of innovative products to meet business objectives and user needs.
+    \item Performed Root Cause Analysis on OCPP data from ABB and Schneider Electric EV charging stations, using NLP sentiment analysis to identify and resolve anomalies in charging systems. This effort reduced system incidents by 24\%. Additionally, it developed a knowledge database that improved troubleshooting efficiency for major power infrastructure providers.
+\end{joblong}
+\\
+\begin{joblong}{}{Lead Data Scientist}{2020 - 2022}
+    \item Developed and implemented an advanced BESS forecasting and monitoring system using BMS data to detect voltage anomalies and predict system degradation. Incorporated ERCOT and CAISO market participation data to model performance under varying market conditions. Enabled real-time decision-making through interactive dashboards and forecasting outputs, supporting energy portfolio optimization and trading strategies.
+    \item Integrated LLMs with Canary and Cygnet SCADA systems to extract insights from historical operator notes in WellView software. Fine-tuned BERT model for job cost prediction, enabling proactive budget management and cost deviation prevention.
+    \item Developed predictive models for energy generation, enabling advanced forecasting, power curve analysis, and proactive identification of equipment wear and long-term operational challenges, ensuring optimal O\&M responsiveness. 
+\end{joblong}
+\\
+\begin{joblong}{}{Data Scientist / Machine Learning Engineer}{2018 - 2020}
+    \item \textbf{Advanced Energy Analytics:} Deployed analytics for 15+ GW across diverse energy applications, including RWE-Innogy's offshore wind turbines. Implemented predictive maintenance for Enel, Longroad, RWE, and Onward using anomaly detection methods (Isolation Forest, PCA) to optimize operations.
+    \item \textbf{Predictive Solutions:} Implemented predictive analytics and anomaly detection for energy giants including ExxonMobil, Shell, and Enel, leveraging advanced techniques (neural networks, LSTM, pattern recognition) to optimize operations and enhance equipment health.
+    \item \textbf{KPI Development \& Visualization:} Designed and implemented IEC-compliant dashboards tracking critical solar performance metrics including performance ratio, soiling, degradation, DC health, tracker alignment, and expected power. Created visualizations such as waterfall losses, heatmaps, and power curves. Calculated power loss due to underperformance and downtime allocation, integrating PVLib and PVSyst data for comprehensive analysis and optimization insights.
+\end{joblong}
+
+\begin{joblong}{Tafer Hotels \&  Resorts }{Data Analyst}{2017 - 2018}
+    \item Developed a forecasting model for hotel demand using mixed-integer linear programming and an additive time series method (capturing yearly, weekly, and daily seasonality), integrating data from multiple sources, leading to increased occupancy rates and optimized revenue streams.
+    \item Collaborated closely with sales and marketing teams, employing the model's constraints and outputs to determine competitive pricing and innovative marketing strategies, aligning with demand forecasts and market dynamics.
+\end{joblong}
+
+\begin{joblong}{Hewlett Packard Enterprise}{Systems and Solutions Architect}{2014 - 2016}
+    \item Developed a cross-platform support application for SAS, Qlikview, and Informatica, significantly enhancing incident response times.
+    \item Led the adoption of Agile methodologies, ensuring consistent delivery of business value through efficient, iterative sprints.
+\end{joblong}
+    
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+    2016 - 2017 & M.Sc. in Advanced Computer Science at \textbf{University of Sheffield} \\
+    & Dissertation: Developed and compared machine learning models, including SVM, Decision Tree, Multilayer Perceptron, Regression, Logistic Regression, and Mixed Gaussian Model, for predicting energy efficiency in buildings; leveraged advanced statistical techniques for performance analysis. \href{https://github.com/dcerdac/DissertationCode}{Code Example} \\
+    2009 - 2014 & B.Sc. in Electronics Engineering at \textbf{Instituto Tecnologico y de Estudios Superiores de Monterrey} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+& \normalsize{Spanish (Native), English (Fluent)}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATION
+%----------------------------------------------------------------------------------------
+\section{Projects \& Certifications}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+& \normalsize{\href{https://climatebase.org/fellowship}{Climatebase Fellow} - Cohort 7 - Climatebase Fellowship.  (2025–Present).}\\
+& \normalsize{\href{https://github.com/AzulRK22/queenDrones}{EcoVentus} -  2nd Place Winner - Huawei Developer Competition. Mexico City, Mexico (2025)}\\
+& \normalsize{\href{https://github.com/dcerdac/MachineLearningProjects/blob/master/010102001521809623012377209.pdf}{HCIA-IA} - Huawei Certified. Shenzhen, China (2024)}\\
+& \normalsize{\href{https://github.com/dcerdac/keepnai}{Wildfire Drone Detection} - OpenAI Hackathon Latinoamerica. Santiago, Chile (2024)}\\
+
+
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Machine Learning & \normalsize{Scikit-learn, YOLO, TensorFlow, Keras, PyTorch, BERT, Transformers, Prophet, Catboost, LightGBM, XGboost}\\
+Data Analysis & \normalsize{NumPy, SciPy, Pandas, Jupyter Notebook, Statistics, Excel}\\
+Data Visualization & \normalsize{Matplotlib, Seaborn, Plotly}\\
+Natural Language Processing (NLP) & \normalsize{NLTK, Gensim, TfidfVectorizer, Word2Vec}\\
+Explainable AI & \normalsize{SHAP, Lime}\\
+Cloud Computing & \normalsize{EC2, S3, Lambda, RDS, CloudFormation, IAM, EKS, Route53, AWS-CLI, VPC, SageMaker, EventBridge, CloudWatch}\\
+MLOps - DevOps & \normalsize{Docker, K8s, Circle CI/CD, MLFlow, Weight \& Biases}\\
+Programming Languages & \normalsize{Python, Java, Matlab, C, Unix, Shell-Bash Scripting}\\
+Web Development & \normalsize{Javascript, HTML, PHP, Node.js, Flask, Django, Celery, FastAPI}\\
+Databases & \normalsize{SQL, NoSQL, Postgres, MongoDB}\\
+APIs & \normalsize{REST API, SCADA Systems}\\
+Development Tools & \normalsize{Eclipse, Jira, Confluence, GitHub}\\
+\end{tabularx}
+\vfill
+
+\end{document}
