@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber Diego_Cerda_CV"] 1735844874.9362 "Diego_Cerda_CV.bcf" "Diego_Cerda_CV.bbl" "Diego_Cerda_CV" 1744052108.89142 0
-  "Diego_Cerda_CV.bcf" 1744052108.65704 107314 3fa5a52b889556d0fd56daa4529178fb "pdflatex"
+["biber Diego_Cerda_CV"] 1735844874.9362 "Diego_Cerda_CV.bcf" "Diego_Cerda_CV.bbl" "Diego_Cerda_CV" 1749228997.90733 0
+  "Diego_Cerda_CV.bcf" 1749228997.72879 107314 3fa5a52b889556d0fd56daa4529178fb "pdflatex"
   (generated)
   "Diego_Cerda_CV.bbl"
   "Diego_Cerda_CV.blg"
   (rewritten before read)
-["pdflatex"] 1744052106.97969 "/Users/home/GitRepos/autoCV/Diego_Cerda_CV.tex" "Diego_Cerda_CV.pdf" "Diego_Cerda_CV" 1744052108.89182 0
-  "/Users/home/GitRepos/autoCV/Diego_Cerda_CV.tex" 1744052106.68907 13533 eb99e1dd8debbb18d2d07470534fb794 ""
+["pdflatex"] 1749228996.12466 "/Users/home/GitRepos/autoCV/Diego_Cerda_CV.tex" "Diego_Cerda_CV.pdf" "Diego_Cerda_CV" 1749228997.90771 0
+  "/Users/home/GitRepos/autoCV/Diego_Cerda_CV.tex" 1749228995.58868 13533 eb99e1dd8debbb18d2d07470534fb794 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -116,11 +116,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1720730401.92386 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1720730124 8221421 a6cb607d30b00f7440e1029cc433eaf7 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Diego_Cerda_CV.aux" 1744052108.65462 925 73aa36f84d55914ed0768a88151c00c5 "pdflatex"
+  "Diego_Cerda_CV.aux" 1749228997.72624 925 73aa36f84d55914ed0768a88151c00c5 "pdflatex"
   "Diego_Cerda_CV.bbl" 1735844877.58962 466 ee04f40f768daeed26442158e95aba61 "biber Diego_Cerda_CV"
-  "Diego_Cerda_CV.out" 1744052108.65551 625 e2be2e0e54fbee182a7df8ad656350f8 "pdflatex"
-  "Diego_Cerda_CV.run.xml" 1744052108.65865 2380 7f9304ac9c3869bdcb9b2791f06a886b "pdflatex"
-  "Diego_Cerda_CV.tex" 1744052106.68907 13533 eb99e1dd8debbb18d2d07470534fb794 ""
+  "Diego_Cerda_CV.out" 1749228997.72714 625 e2be2e0e54fbee182a7df8ad656350f8 "pdflatex"
+  "Diego_Cerda_CV.run.xml" 1749228997.72998 2380 7f9304ac9c3869bdcb9b2791f06a886b "pdflatex"
+  "Diego_Cerda_CV.tex" 1749228995.58868 13533 eb99e1dd8debbb18d2d07470534fb794 ""
   (generated)
   "Diego_Cerda_CV.aux"
   "Diego_Cerda_CV.bcf"
